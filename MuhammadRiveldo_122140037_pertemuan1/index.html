@@ -1,167 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Personal Dashboard</title>
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RivelTrack - Manajemen Tugas Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR / MENU PORTFOLIO -->
-  <nav class="navbar">
-    <div class="logo">Pengingat Kuliah</div>
-    <div class="menu-icon" id="menuIcon">
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#jadwal">Jadwal Kuliah</a></li>
-      <li><a href="#tugas">Daftar Tugas</a></li>
-      <li><a href="#catatan">Catatan Pelajaran</a></li>
-      <li><a href="#cuaca">Waktu & Cuaca</a></li>
-    </ul>
-    <button id="toggleTheme" class="btn-theme">Tema Tampilan</button>
-  </nav>
-
-  <!-- HERO / HOME -->
-  <header id="home" class="hero-section">
-    <div class="hero-content">
-      <h1>Perjalanan 1000 mil dimulai dari satu langkah kecil?</h1>
-      <p>Biar tidak lupa ayok masukin Jdwal Kuliah Kamu, Daftar Tugas, dan Catatan Pelajaran yang didapat</p>
-      <a href="#jadwal" class="btn-hero">Mulai</a>
-    </div>
+  <header>
+    <h1>🎓 RivelTrack</h1>
+    <p>Kelola tugas kuliahmu dengan lebih teratur dan efisien</p>
   </header>
 
   <main>
-    <!-- SECTION: JADWAL KULIAH -->
-    <section id="jadwal" class="section-card">
-      <h2>Jadwal Kuliah</h2>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="scheduleCourse">Mata Kuliah</label>
-          <input type="text" id="scheduleCourse" placeholder="Misal: Teknologi Memasak">
-        </div>
-        <div class="form-group">
-          <label for="scheduleDay">Hari</label>
-          <select id="scheduleDay">
-            <option value="" disabled selected>Pilih Hari</option>
-            <option value="Senin">Senin</option>
-            <option value="Selasa">Selasa</option>
-            <option value="Rabu">Rabu</option>
-            <option value="Kamis">Kamis</option>
-            <option value="Jumat">Jumat</option>
-            <option value="Sabtu">Sabtu</option>
-            <option value="Minggu">Minggu</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="scheduleStart">Jam Mulai</label>
-          <input type="time" id="scheduleStart">
-        </div>
-        <div class="form-group">
-          <label for="scheduleEnd">Jam Selesai</label>
-          <input type="time" id="scheduleEnd">
-        </div>
-      </div>
-      <button class="btn-add" id="btnAddSchedule">Tambahkan data</button>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Mata Kuliah</th>
-            <th>Hari</th>
-            <th>Jam</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="scheduleTableBody">
-          <!-- RENDER JADWAL -->
-        </tbody>
-      </table>
-    </section>
-
-    <!-- SECTION: DAFTAR TUGAS -->
-    <section id="tugas" class="section-card">
-      <h2>Daftar Tugas</h2>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="taskName">Judul Tugas</label>
-          <input type="text" id="taskName" placeholder="Tugas apalgi yang belum selesai?">
-        </div>
-        <div class="form-group">
-          <label for="taskDeadline">Deadline</label>
-          <input type="date" id="taskDeadline">
-        </div>
-      </div>
-      <button class="btn-add" id="btnAddTask">Tambahkan data</button>
-
-      <input type="text" id="task-filter" placeholder="Filter Tugas..." class="filter-input" />
-
-      <table>
-        <thead>
-          <tr>
-            <th>Judul Tugas</th>
-            <th>Deadline</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="taskTableBody">
-          <!-- RENDER TUGAS -->
-        </tbody>
-      </table>
-    </section>
-
-    <!-- SECTION: CATATAN PELAJARAN -->
-    <section id="catatan" class="section-card">
-      <h2>Catatan Pelajaran</h2>
-      <div class="form-row">
-        <div class="form-group full-width">
-          <label for="noteText">Catatan</label>
-          <input type="text" id="noteText" placeholder="Mulai dengan menulis catatan kecil">
-        </div>
-      </div>
-      <button class="btn-add" id="btnAddNote">Tambahkan data</button>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Catatan</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="noteTableBody">
-          <!-- RENDER CATATAN -->
-        </tbody>
-      </table>
-    </section>
-
-    <!-- SECTION: WAKTU & CUACA -->
-    <section id="cuaca" class="section-card">
-      <h2>Waktu & Cuaca</h2>
-      <form id="weatherForm" class="form-row">
-        <div class="form-group full-width">
-          <label for="weatherRegion">Nama Daerah (Contoh: Jakarta)</label>
-          <input type="text" id="weatherRegion" placeholder="Masukkan daerah">
-        </div>
-        <button type="submit" class="btn-add">Tampilkan Cuaca</button>
+    <section id="form-section">
+      <h2>Tambah Tugas Baru</h2>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Nama Tugas">
+        <input type="text" id="course" placeholder="Mata Kuliah">
+        <input type="date" id="deadline">
+        <button type="submit">Tambah</button>
       </form>
-      <div class="weather-time" id="weather"></div>
-      <div class="weather-time" id="time"></div>
+      <small id="errorMsg" class="error"></small>
+    </section>
+
+    <section id="filter-section">
+      <input type="text" id="searchTask" placeholder="Cari tugas atau mata kuliah...">
+      <select id="filterStatus">
+        <option value="all">Semua</option>
+        <option value="pending">Belum Selesai</option>
+        <option value="done">Selesai</option>
+      </select>
+      <span id="countInfo"></span>
+    </section>
+
+    <section id="taskListSection">
+      <h2>Daftar Tugas</h2>
+      <div id="taskList"></div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer-section">
-    <p>&copy; 2025 Muhammad Riveldo Hermawan Putra (122140037). Personal Dashbord. All rights reserved.</p>
+  <footer>
+    <p>© 2025 RivelTrack | Aplikasi Manajemen Tugas Mahasiswa</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
