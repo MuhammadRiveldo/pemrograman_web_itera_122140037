@@ -1,0 +1,134 @@
+:root {
+    --primary: #3a57e8;
+    --success: #22bb33;
+    --danger: #ff4444;
+    --bg: #f4f6fb;
+    --white: #fff;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    color: #222;
+  }
+  
+  header {
+    text-align: center;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin: 0 0 10px;
+  }
+  
+  #form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #form-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #form-section button {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #form-section button:hover {
+    background: #2b45c5;
+  }
+  
+  #errorMsg {
+    display: block;
+    color: var(--danger);
+    margin-top: 8px;
+    font-size: 0.9em;
+  }
+  
+  #filter-section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  #filter-section input, #filter-section select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .task-card {
+    background: #fafafa;
+    border-left: 5px solid var(--primary);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-card.done {
+    border-left-color: var(--success);
+    background: #e9ffea;
+    text-decoration: line-through;
+    color: #666;
+  }
+  
+  .task-info strong {
+    font-size: 1.05em;
+  }
+  
+  .task-actions button {
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .btn-done {
+    background: var(--success);
+  }
+  
+  .btn-edit {
+    background: #ffaa00;
+  }
+  
+  .btn-delete {
+    background: var(--danger);
+  }
+  
+  footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+  }
+  
