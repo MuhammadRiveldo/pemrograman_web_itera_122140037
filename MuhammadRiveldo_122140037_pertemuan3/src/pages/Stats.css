@@ -1,0 +1,54 @@
+.stats-page {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .stats-page h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .stat-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-card p {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .stat-card.owned {
+    border-left: 6px solid #F7CFD8;
+  }
+  .stat-card.reading {
+    border-left: 6px solid #F4F8D3;
+  }
+  .stat-card.wishlist {
+    border-left: 6px solid #A6D6D6;
+  }
+  .stat-card.total {
+    border-left: 6px solid #8E7DBE;
+  }
+  

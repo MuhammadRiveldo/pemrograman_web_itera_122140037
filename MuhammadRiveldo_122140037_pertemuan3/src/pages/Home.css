@@ -1,0 +1,16 @@
+.home .controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .home .controls input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
