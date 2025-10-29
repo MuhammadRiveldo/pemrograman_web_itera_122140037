@@ -42,7 +42,7 @@ Berikut ini adalah tampilan dari website RivelReads halaman Home:
 ![Screenshot Aplikasi](./src/assets/Images/halamanHome.png) 
 .
 
-Berikut ini adalah tampilan dari website RivelReadshalaman Statistics:
+Berikut ini adalah tampilan dari website RivelReads halaman Statistics:
 ![Screenshot Aplikasi](./src/assets/Images/halamanStats.png)
 
 ---
