@@ -95,7 +95,7 @@ Putri           122140200  40     45     50     45.0    E
 
 1. **Persiapan**  
    ```bash
-   Pastikan kamu sudah menginstall **Python 3.8+** di perangkatmu.
+   Pastikan kamu sudah menginstall Python 3.8+ di perangkatmu.
 
 2. **Clone repository**  
    ```bash
