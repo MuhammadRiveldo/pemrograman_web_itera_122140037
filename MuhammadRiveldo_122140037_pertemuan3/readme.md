@@ -7,7 +7,7 @@ Aplikasi manajemen koleksi buku pribadi bernama RivelReads, dibuat menggunakan R
 ## 🔍 Deskripsi Aplikasi
 
 RivelReads menyediakan fitur untuk:
-- **Menambah buku baru** dengan data judul, penulis, status: Milik Saya / Sedang Dibaca / Ingin Membeli)  
+- **Menambah buku baru** dengan data judul, penulis, status: Milik Saya / Sedang Dibaca / Ingin Membeli
 - **Mengedit** dan **Menghapus** entri buku  
 - **Filter** daftar buku berdasarkan status  
 - **Pencarian** buku berdasarkan judul  
